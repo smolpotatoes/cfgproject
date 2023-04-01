@@ -2,6 +2,20 @@
     box-sizing: border-box;
 }
 
+header {
+    background-image: url(./Images/steph-wilson-sGpgrFUl-1o-unsplash.jpg);
+    background-size: cover;
+    max-width: 100%;
+    min-height: 600px;
+
+}
+
+.header-text {
+    padding: 20%;
+    text-align: center;
+    color: azure;
+}
+
 h3 {
     padding: 20px;
 }
@@ -19,21 +33,7 @@ ul {
     float: right;
     background-position-y: top;
     background-color: black;
-    opacity: 30%;
-}
-
-header {
-    background-image: url(./Images/steph-wilson-hnna-YZmloM-unsplash.jpg);
-    background-color: rgba(68, 68, 68, 0.481);
-    position:relative;
-    width: 100%;
-    min-height: viewport-length;
-
-}
-
-.header-text {
-    vertical-align: bottom;
-    text-align: left;
+    opacity: 60%;
 }
 
 .navbar-list {
@@ -55,7 +55,7 @@ header {
 }
 
 #Search {
-    background: purple;
+    background-color: rgba(155, 8, 133, 0.99);
     opacity: 100%;
     color: white;
     margin-right: 25px;
@@ -72,13 +72,10 @@ header {
   font-family: 'Poppins', sans-serif;
 }
 
-.hero-div {
-text-align: left;
-}
-
 .intro {
     padding: 50px;
     background-color: #664AFF;
+    color: azure;
 }
 
 body{
