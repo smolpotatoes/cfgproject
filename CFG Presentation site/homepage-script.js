@@ -1,12 +1,14 @@
+alert('This site uses cookies because they are delicious!');
+
 let suggestions = [
-    "Channel",
-    "CodingLab",
-    "CodingNepal",
-    "YouTube",
-    "YouTuber",
-    "YouTube Channel",
-    "Blogger",
-    "Bollywood",
+    "rug",
+    "purple",
+    "red",
+    "yellow",
+    "blue",
+    "green",
+    "pink",
+    "black",
     "Vlogger",
     "Vechiles",
     "Facebook",

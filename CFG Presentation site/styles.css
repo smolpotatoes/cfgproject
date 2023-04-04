@@ -104,6 +104,9 @@ body {
 }
 
 .search-input {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
   align-items: center;
   background: #fff;
   -ms-flex-item-align: center;
