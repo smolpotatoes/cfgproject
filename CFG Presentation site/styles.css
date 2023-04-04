@@ -1,53 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+sans:wght@200;300;400;500;600;700&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
+.overlay {
+    width: 100%;
+    background-color: rgba(0,0,0,0.8)
+
+}
+
+
 header {
     background-image: url(./Images/steph-wilson-sGpgrFUl-1o-unsplash.jpg);
     background-size: cover;
-    max-width: 100%;
-    min-height: 600px;
-
-}
-
-.header-text {
-    padding: 20%;
-    text-align: center;
-    color: azure;
-}
-
-h3 {
-    padding: 20px;
-}
-
-.img-hero {
-    max-width: 100%;
-    overflow-y: scroll;
+    height: 100vh;
 }
 
 ul {
     list-style: none;
 }
 
-.navbar {
-    float: right;
-    background-position-y: top;
-    background-color: black;
-    opacity: 60%;
-}
-
 .navbar-list {
-    display: inline-block;
-    padding: 9px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: whitesmoke;
-    font-family: "Roboto", sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1.3rem 0;
+    margin-bottom: 0;
+    z-index: 1000;
 }
 
-.navbar-links {
-    display: inline-block;
+.navbar-list-item {
     padding: 9px;
+}
+
+.navbar-link {
     text-decoration: none;
     text-transform: uppercase;
     color: whitesmoke;
@@ -64,7 +55,25 @@ ul {
     font-weight: 600;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: baseline;
+    width: 100%;
+    height: 100%;
+    padding: 0rem 3rem 8rem;
+    color: azure;
+    text-align: left;
+    text-shadow: rgba(0, 0, 0, 0.7) 0.1rem 0.1rem 0.3rem;
+}
+
+h1 {
+    font-family: 'Josefin-sans', 700;
+    font-size: 96px;
+    text-transform: uppercase;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -73,25 +82,28 @@ ul {
 }
 
 .intro {
-    padding: 50px;
-    background-color: #664AFF;
+    padding: 10rem;
+    background-color: #50439d;
     color: azure;
 }
 
-body{
+body {
   padding: 0px;
   text-align: center;
 }
 
-.search-container{
+.search-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
   max-width: 100%;
-  margin: 20px auto;
+  padding: 5rem;
   background-image: url("./Images/purple-marble-wallpaper-mural-for-the-home.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.search-container .searchInput{
+.search-input {
   align-items: center;
   background: #fff;
   -ms-flex-item-align: center;
@@ -101,7 +113,7 @@ body{
   box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
 }
 
-.searchInput input{
+.search-input input {
   height: 55px;
   width: 100%;
   outline: none;
@@ -112,11 +124,11 @@ body{
   box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
 }
 
-.searchInput.active input{
+.search-input.active input{
   border-radius: 5px 5px 0 0;
 }
 
-.searchInput .resultBox{
+.search-input .result-box{
   padding: 0;
   opacity: 0;
   pointer-events: none;
@@ -124,13 +136,13 @@ body{
   overflow-y: auto;
 }
 
-.searchInput.active .resultBox{
+.search-input.active .result-box{
   padding: 10px 8px;
   opacity: 1;
   pointer-events: auto;
 }
 
-.resultBox li{
+.result-box li{
   list-style: none;
   padding: 8px 12px;
   display: none;
@@ -139,14 +151,14 @@ body{
   border-radius: 3px;
 }
 
-.searchInput.active .resultBox li{
+.search-input.active .result-box li{
   display: block;
 }
-.resultBox li:hover{
+.result-box li:hover{
   background: #efefef;
 }
 
-.searchInput .icon{
+.search-input .icon{
   position: absolute;
   right: 0px;
   top: 0px;
