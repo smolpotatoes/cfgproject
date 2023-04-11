@@ -182,7 +182,7 @@ text-align: center;
 
 .carousel-container {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   padding: 50px;
   max-width: viewport-width;
   text-align: center;
