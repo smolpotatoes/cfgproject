@@ -40,7 +40,7 @@
               <a class="navbar-link" href="#">Inspiration</a>
             </li>
             <li class="navbar-list-item">
-              <a class="navbar-link" id="Search" href="#">Search</a>
+              <a class="navbar-link" id="Search" href="#search-container">Search</a>
             </li>
           </ul>
         </nav>
@@ -62,10 +62,11 @@
       </p>
     </div>
 
-    <div class="search-container">
+    <div id="search-container" class="search-container">
       <h3>Search for your next raison d'etre...</h3>
+      <p>Use our image search to find inspiration, tips and tricks for your project.</p>
       <div class="search-input">
-        <input type="text" placeholder="Purple velvet curtains" />
+        <input type="text" placeholder="Purple velvet drapes" />
         <div class="result-box">
           <!-- here list are inserted from javascript -->
         </div>
@@ -76,92 +77,52 @@
     <div class="ideas-container">
       <h3>Ideas we love</h3>
     
-      <div class="carousel-container">
-      <div
-        id="carouselExample"
-        class="carousel slide"
-        data-ride="carousel"
-        data-interval="9000"
-      >
-        <div class="carousel-inner row w-10 mxauto" role="listbox">
-          <div class="carousel-item col-md-3 active">
-            <img
-              class="square"
-              src="./Images/27 of the Most Gorgeous Half Bath Ideas We've Ever Seen.jpeg"
-              alt="slide 1"
-            />
-          </div>
-          <div class="carousel-item col-md-3">
-            <img
-              class="square"
-              src="./Images/30 Rooms with Dazzling Wallpaper (1).jpeg"
-              alt="slide 2"
-            />
-          </div>
-          <div class="carousel-item col-md-3">
-            <img
-              class="square"
-              src="./Images/Beautiful Home Interiors Designs & Modern Living Room Decor Ideas 2023.jpeg"
-              alt="slide 3"
-            />
-          </div>
-          <div class="carousel-item col-md-3">
-            <img
-              class="img-fluid mx-auto d-block"
-              src="./Images/Blue Gold Velvet Ornate Italian Design Vintage Cushion Cover - Royal Collection.jpeg"
-              alt="slide 4"
-            />
-          </div>
-          <div class="carousel-item col-md-3">
-            <img
-              class="img-fluid mx-auto d-block"
-              src="./Images/337418850_5973555422713218_2233757043821337874_n.jpg"
-              alt="slide 5"
-            />
-          </div>
-          <div class="carousel-item col-md-3">
-            <img
-              class="img-fluid mx-auto d-block"
-              src="//placehold.it/600x400?text=6"
-              alt="slide 6"
-            />
-          </div>
-          <div class="carousel-item col-md-4">
-            <img
-              class="img-fluid mx-auto d-block"
-              src="//placehold.it/600x400?text=7"
-              alt="slide 7"
-            />
-          </div>
-          <div class="carousel-item col-md-4">
-            <img
-              class="img-fluid mx-auto d-block"
-              src="//placehold.it/600x400?text=8"
-              alt="slide 7"
-            />
-          </div>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="col-xs-4"><img src="./Images/30 Rooms with Dazzling Wallpaper.jpeg" class="square"></div>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExample"
-          role="button"
-          data-slide="prev"
-        >
-          <i class="fa fa-chevron-left fa-lg text-muted"></i>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next text-faded"
-          href="#carouselExample"
-          role="button"
-          data-slide="next"
-        >
-          <i class="fa fa-chevron-right fa-lg text-muted"></i>
-          <span class="sr-only">Next</span>
-        </a>
+        <div class="item">
+          <div class="col-xs-4"><img src="./Images/Beautiful Home Interiors Designs & Modern Living Room Decor Ideas 2023.jpeg" class="square"></div>
+        </div>
+        <div class="item">
+          <div class="col-xs-4"><img src="./Images/aHR0cHM6Ly9jZG4udmV2YW5vLmNvbS9CbG9nL3Jlc291cmNlLWNlbnRlci9tYXhpbWFsaXNtLWludGVyaW9yLWRlc2lnbi9tYXhpbWFsaXN0LWJsdWUtbGl2aW5nLXJvb20uanBn.jpeg" class="square"></div>
+        </div>
+        <div class="item">
+          <div class="col-xs-4"><img src="./Images/Blue Gold Velvet Ornate Italian Design Vintage Cushion Cover - Royal Collection.jpeg" class="square"></div>
+        </div>
+        <div class="item">
+          <div class="col-xs-4"><img src="./Images/Bourgeois Orange_Red_Yellow Rug.jpeg" class="square"></div>
+        </div>
+        <div class="item">
+          <div class="col-xs-4"><img src="./Images/khloe-arledge--dvGLb5aOTE-unsplash.jpg" class="square"></div>
+        </div>
+        <div class="item">
+          <div class="col-xs-4"><img src="./Images/Amazon Velvet Curtains - 90w x 72h inches.png" class="square"></div>
+        </div>
+        <div class="item">
+          <div class="col-xs-4"><img src="./Images/Corridor.jpeg" class="square"></div>
+        </div>
+        <div class="item">
+          <div class="col-xs-4"><img src="./Images/Cube Star Anti Slip Moroccan Patterned Porcelain Wall & Floor Tiles.jpeg" class="square"></div>
+        </div>
       </div>
+
+        
+    
+      <!-- Controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="false"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="false"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
   </div>
+
 
     <div class="inspiration">
       <h3>Maximalism by category</h3>
